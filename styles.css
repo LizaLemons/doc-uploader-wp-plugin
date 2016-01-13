@@ -1,0 +1,33 @@
+#attached-docs-div button.edit-doc-btn {
+	float: right;
+	cursor: pointer;
+}
+#attached-docs-div span.delete-doc-btn {
+	float: right;
+	padding: 3px;
+	border: 1px solid red;
+	cursor: pointer;
+}
+#attached-docs-div span.delete-doc-btn:hover {
+	color: white;
+	background-color: red;
+}
+/* hide the 'delete attachment?' checkbox */
+#attached-docs-div span.hidden-info-span {
+	display: none;
+}
+.pull-right,
+.dashicons.dashicons-arrow-up,
+.dashicons.dashicons-arrow-down {
+	float: right;
+	cursor: move;
+}
+.delete-doc-btn {
+	color: red;
+}
+.doc-num {
+	font-size: 16px;
+}
+.highlight {
+	background-color: #FFFF00;
+}
