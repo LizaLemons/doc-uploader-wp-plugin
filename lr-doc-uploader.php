@@ -63,7 +63,7 @@ function doc_uploader_settings_form_fxn() {
 	// get previously selected locations
 	$selectedLocations = get_option(doc_uploader_options);
 
-  // Create list of all options
+  // Default list of all post types
   $locationsOpsArr = ['pages', 'posts'];
 
   // get all CPTs of the site
@@ -73,7 +73,7 @@ function doc_uploader_settings_form_fxn() {
 	);
 	$post_types = get_post_types( $args, 'names' );
 
-  // push CPTs into arr of options
+  // push CPTs into arr of default options
   foreach ( $post_types as $post_type ) {
     $cptObj = get_post_type_object( $post_type );
     $cptName = $cptObj->name;
